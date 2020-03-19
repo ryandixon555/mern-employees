@@ -1,0 +1,31 @@
+{
+  "name": "mern-employees",
+  "version": "1.0.0",
+  "description": "A MERN stack app showing an employee database &amp; front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "client": "cd client && npm run start",
+    "server": "nodemon index --ignore client/",
+    "client-install":"cd client && npm install",
+    "server-install":"npm install",
+    "install-all":"concurrently \"npm run client-install\" \"npm run server-install\"",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryandixon555/mern-employees.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryandixon555/mern-employees/issues"
+  },
+  "homepage": "https://github.com/ryandixon555/mern-employees#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5"
+  }
+}
